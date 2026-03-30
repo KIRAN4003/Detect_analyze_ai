@@ -1,4 +1,6 @@
-import streamlit as st # To import the functions to design the interface
+import streamlit as st 
+# To import the functions to design the interface
+import dotenv
 from dotenv import load_dotenv # To load the environment variables from the .env file
 import os # To access the environment variables
 import google.generativeai as genai # To use the Google Generative AI API
