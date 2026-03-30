@@ -1,10 +1,9 @@
 import streamlit as st 
 # To import the functions to design the interface
-import dotenv
 from dotenv import load_dotenv # To load the environment variables from the .env file
+load_dotenv()
 import os # To access the environment variables
 import google.generativeai as genai # To use the Google Generative AI API
-load_dotenv()
 
 from PIL import Image # pillow is used to load,save,convert the format and manipulate the image
 
