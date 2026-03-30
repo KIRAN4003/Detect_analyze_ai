@@ -47,8 +47,7 @@ genai.configure(api_key=key) # To configure the Google Generative AI API with th
 
 def generate_results(prompt,img):
     model=genai.GenerativeModel('gemini-2.5-flash') # 'gemeni-1.5-pro','gemini-1.5-flash',
-    results=model.generate_content(f'''Using the given prompt{prompt},
-                                   analyze the given image{img} and generate the results based on the prompt''')
+    results=model.generate_content([prompt,img])
     return results.text
     
 submit=st.button('Analyze the defect🚨')
