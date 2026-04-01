@@ -56,5 +56,5 @@ if submit:
     with st.spinner('Analyzing ...🤔'):
         response=generate_results(prompt,img)
         
-        st.markdown('## green:[Results💯]')
+        st.markdown('## :green[Results💯]')
         st.write(response)
